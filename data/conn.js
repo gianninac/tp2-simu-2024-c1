@@ -9,7 +9,7 @@ let instance = null;
 export default async function getConnection() {
   if (instance == null) {
     try {
-      instance = await client.connect();
+      instance = await client.connect(); // promesa
     } catch (error) {
       console.log(err.message);
     }
